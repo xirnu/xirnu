@@ -119,10 +119,10 @@
 ## GitHub Analytics
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=xirnu&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=c9d1d9&rank_icon=percentile&include_all_commits=true&count_private=true&cache_seconds=14400" />
+  <img height="180em" src="https://github-readme-stats-nu-seven-56.vercel.app/api?username=xirnu&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=c9d1d9&rank_icon=percentile&include_all_commits=true&count_private=true&cache_seconds=14400" />
 </a>
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xirnu&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=c9d1d9&langs_count=10&hide=html,css&cache_seconds=14400" />
+  <img height="180em" src="https://github-readme-stats-nu-seven-56.vercel.app/api/top-langs/?username=xirnu&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=c9d1d9&langs_count=10&hide=html,css&cache_seconds=14400" />
 </a>
 
 <br/>
