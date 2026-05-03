@@ -15,15 +15,73 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
-        id: snake-gif
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          github_user_name: xirnu
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake-red.svg?palette=github-dark&color_snake=%23ff0000
-            dist/github-contribution-grid-snake.gif?palette=github-dark&color_snake=%23ff0000
+          node-version: 20
+
+      - name: Install snake generator
+        run: npm install --no-save generate-snake-animation@3.5.0 canvas@3.2.0 gif-encoder-2@1.0.5 gifsicle@5.3.0
+
+      - name: Generate smooth snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          cat > generate.mjs <<'JSEOF'
+          import fs from "node:fs";
+          import path from "node:path";
+          import { generateSnakeAnimation } from "generate-snake-animation";
+
+          // 4x interpolated frames per step + 80ms per step  ->  20ms/frame ~= 50fps, very smooth.
+          const animationOptions = { frameByStep: 4, stepDurationMs: 80 };
+
+          // github-dark palette + red snake
+          const drawDark = {
+            colorBackground: "#0c1116",
+            colorDotBorder: "#1b1f230a",
+            colorEmpty: "#161b22",
+            colorDots: ["#161b22", "#01311f", "#034525", "#0f6d31", "#00c647"],
+            colorSnake: "#ff0000",
+            sizeCell: 16,
+            sizeDot: 12,
+            sizeDotBorderRadius: 2,
+          };
+          // github-light palette + purple
+          const drawLight = {
+            colorBackground: "#ffffff",
+            colorDotBorder: "#1b1f230a",
+            colorEmpty: "#ebedf0",
+            colorDots: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+            colorSnake: "purple",
+            sizeCell: 16,
+            sizeDot: 12,
+            sizeDotBorderRadius: 2,
+          };
+
+          const outputs = [
+            { filename: "dist/github-contribution-grid-snake.svg",      format: "svg", drawOptions: drawLight, animationOptions },
+            { filename: "dist/github-contribution-grid-snake-dark.svg", format: "svg", drawOptions: drawDark,  animationOptions },
+            { filename: "dist/github-contribution-grid-snake-red.svg", format: "svg", drawOptions: drawDark,  animationOptions },
+            { filename: "dist/github-contribution-grid-snake.gif",      format: "gif", drawOptions: drawDark,  animationOptions },
+          ];
+
+          const results = await generateSnakeAnimation(
+            { platform: "github", username: "xirnu", githubToken: process.env.GITHUB_TOKEN },
+            outputs.map(({ format, drawOptions, animationOptions }) => ({ format, drawOptions, animationOptions })),
+          );
+
+          for (let i = 0; i < outputs.length; i++) {
+            const out = outputs[i];
+            const result = results[i];
+            if (!result) continue;
+            fs.mkdirSync(path.dirname(out.filename), { recursive: true });
+            fs.writeFileSync(out.filename, result);
+            console.log(`✓ ${out.filename} (${(result.length / 1024).toFixed(1)} KB)`);
+          }
+          JSEOF
+          node generate.mjs
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
