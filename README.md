@@ -67,7 +67,10 @@
 <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white&labelColor=1a1a2e" />
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=scrapy&logoColor=white&labelColor=1a1a2e" />
+<img src="https://img.shields.io/badge/aiogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a2e" />
+<img src="https://img.shields.io/badge/Pyrogram-FF5722?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=1a1a2e" />
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=1a1a2e" />
@@ -146,10 +149,6 @@
 ## Contribution Graph
 
 <img src="https://raw.githubusercontent.com/xirnu/xirnu/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=xirnu&custom_title=Contribution%20Graph&theme=react-dark&hide_border=true&bg_color=0D1117&line=FF0000&point=FF0000&color=c9d1d9&area=true&area_color=FF0000" />
 
 </div>
 
