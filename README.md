@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0000,100:000000&height=200&section=header&text=Pyrater&fontSize=90&fontAlignY=35&animation=fadeIn&fontColor=ffffff&desc=Developer%20•%20Pentester%20•%20Automator&descSize=20&descAlignY=55&stroke=FF0000&strokeWidth=2" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0000,100:000000&height=260&section=header&text=Pyrater&fontSize=80&fontAlignY=36&animation=fadeIn&fontColor=ffffff&desc=Developer%20%E2%80%A2%20Pentester%20%E2%80%A2%20Automator&descSize=18&descAlignY=62&stroke=FF0000&strokeWidth=2" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3500&pause=1200&color=FF0000&center=true&vCenter=true&width=600&lines=Python+%2F+TypeScript+%2F+Node.js;Fullstack+%E2%80%94+FastAPI+%2F+Next.js+%2F+React;Web+Scraping+%26+Automation;Pentest+%26+Security+Research;5%2B+years+of+shipping+production+code" alt="Typing SVG" />
@@ -13,9 +13,6 @@
 </a>
 <a href="https://github.com/kodovye">
   <img src="https://img.shields.io/badge/ORG-kodovye-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e" />
-</a>
-<a href="mailto:pyrater@proton.me">
-  <img src="https://img.shields.io/badge/ProtonMail-FF0000?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=1a1a2e" />
 </a>
 
 <br/>
@@ -160,18 +157,6 @@
 
 <div align="center">
 
-## Now Playing
-
-<a href="https://open.spotify.com/user/31myigcuut5n5bxld7u6bf3hxzhm">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31myigcuut5n5bxld7u6bf3hxzhm&cover_image=true&theme=novatorem&show_offline=true&background_color=0d1117&interchange=true&bar_color=ff0000&bar_color_cover=true" />
-</a>
-
-</div>
-
----
-
-<div align="center">
-
 ## Contact
 
 <a href="https://t.me/pyrater">
@@ -179,9 +164,6 @@
 </a>
 <a href="https://github.com/kodovye">
   <img src="https://img.shields.io/badge/ORG_kodovye-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e" />
-</a>
-<a href="mailto:pyrater@proton.me">
-  <img src="https://img.shields.io/badge/ProtonMail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=1a1a2e" />
 </a>
 
 <br/>
