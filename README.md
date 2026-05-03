@@ -148,7 +148,7 @@
 
 ## Contribution Graph
 
-<img src="https://raw.githubusercontent.com/xirnu/xirnu/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/xirnu/xirnu/output/github-contribution-grid-snake.gif" alt="Snake animation" />
 
 </div>
 
